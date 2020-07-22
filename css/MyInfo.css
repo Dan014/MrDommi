@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: bree;/*colocamos el tipo de fuente que queromos colocar al texto*/
+	src: url(../fuente/BreeSerif-Regular.ttf);
+
+}
+html{
+	background: url(../imagenesDomi/fondocon.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;/*permite que la imagen se ajuste a la pantalla*/
+	width: 100%;}
+	header{
+		width: 100%;/* ancho total del header*/
+		background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+		height: 70px;
+		z-index: 10;
+	}
+	.espacio{
+		width: 0%;/*ancho del header para el menu y el logo*/
+		height: 70px;/*alto del header */
+		background: rgb(252,112,0);
+
+
+	}
+	.ancho{
+		width: 90%;/*ancho del header para el menu y el logo*/
+		height: 70px;/*alto del header */
+		margin: auto; /*me permite centrar el espacio creado*/
+	}
+	.logo{
+		width: 20%;
+		height: 70px;
+		background: rgba(255,20,44,.0);
+		float: left;/*permite enves de ubicarse debajo del bloque seguir en el mismo ero ubcado en la izquierda*/
+		padding-top: 10px;/*lo baja 10 pixel*/
+		box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+	}
+	.logo p a{
+		color: #fff;
+		font-size: 40px;/*Tamaño de la letra*/
+		text-decoration: none;
+		font-weight: bold;
+		font-family: bree;
+
+	}
+
+
+	header nav{
+		width: 80%;
+		height: 70px;
+		background: rgba(255,20,44,.0);
+
+		float: left;
+		text-align: center;
+		padding-top: 24px;
+		box-sizing: border-box;
+
+
+	}
+	header nav ul li{
+		display: inline;/*ubica el menu de forma horizontal */
+	}
+	header nav ul li a{
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+		padding-left: 15px;/*espacios entre las palabras*/
+		font-weight: bold;/*letras en negrilla*/
+		letter-spacing: 1px;
+		font-family: bree;
+	}
+	nav ul li a:hover{
+		color: #444;/*en el momento que esten sobre el menu cambia de color*/
+	}
+	.wrap{
+		width: 1100px;
+		margin: 50px auto;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.tarjeta-wrap{
+		margin: 10px;
+		-webkit-perspective: 800;
+		perspective: 800;
+	}
+
+	.tarjeta{
+		width: 300px;
+		height: 350px;
+		background: rgba(0,0,0,0.4);
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-transition: .7s ease;
+		transition: .7s ease;
+		-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+		box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+	}
+
+
+	.tarjeta2{
+		width: 300px;
+		height: 350px;
+		top: 10px;
+		background: rgba(0,0,0,0.4);
+		position: relative;
+		font-family: bree;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-transition: .7s ease;
+		transition: .7s ease;
+		-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+		box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+		text-align: center;
+		color: white;
+
+	}
+
+
+	.adelante, .atras{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.adelante{
+		width: 100%;
+	}
+
+	.atras{
+		-webkit-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+
+		padding: 15px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+
+		text-align: center;
+		color: #fff;
+		font-family: "open sans";
+	}
+
+	.tarjeta-wrap:hover .tarjeta{
+		-webkit-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+	.card1{
+		background-image: url(../imagenes/Yo.jpg);
+		background-size: cover;
+	}
+
+	.card2{
+		background-image: url(img/2.jpg);
+		background-size: cover;
+	}
+
+	.card3{
+		background-image: url(img/3.jpg);
+		background-size: cover;
+	}
+

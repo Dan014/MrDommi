@@ -1,0 +1,207 @@
+*{/* Ese coloca esta linea con el objetivo de eliminar las margenes que se crean automaticamente*/
+	margin: 0;
+	padding: 0;
+
+}
+
+header{
+	width: 100%;/* ancho total del header*/
+	background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+	height: 70px;
+	z-index: 10;
+}
+.espacio{
+	width: 0%;/*ancho del header para el menu y el logo*/
+	height: 70px;/*alto del header */
+	background: rgb(252,112,0);
+
+
+}
+html{
+	background: url(../imagenesDomi/fondocon.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+.ancho{
+	width: 90%;/*ancho del header para el menu y el logo*/
+	height: 70px;/*alto del header */
+	margin: auto; /*me permite centrar el espacio creado*/
+}
+.logo{
+	width: 20%;
+	height: 70px;
+	background: rgba(255,20,44,.0);
+	float: left;/*permite enves de ubicarse debajo del bloque seguir en el mismo ero ubcado en la izquierda*/
+	padding-top: 10px;/*lo baja 10 pixel*/
+	box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+}
+.logo p a{
+	color: #fff;
+	font-size: 40px;/*Tamaño de la letra*/
+	text-decoration: none;
+	font-weight: bold;
+	font-family: bree;
+
+}
+
+
+nav{
+	width: 80%;
+	height: 70px;
+	background: rgba(255,20,44,.0);
+
+	float: left;
+	text-align: center;
+	padding-top: 24px;
+	box-sizing: border-box;
+
+
+}
+nav ul li{
+	display: inline;/*ubica el menu de forma horizontal */
+}
+nav ul li a{
+	color: #fff;
+	font-size: 24;
+	text-decoration: none;/*le elimina la linea que biene por defecto*/
+	text-transform: uppercase;/*lo pone en mayuculas*/
+	padding-left: 15px;/*espacios entre las palabras*/
+	font-weight: bold;/*letras en negrilla*/
+	letter-spacing: 1px;
+	font-family: bree;
+}
+nav ul li a:hover{
+	color: #444;/*en el momento que esten sobre el menu cambia de color*/
+}
+@font-face{
+	font-family: bree;/*colocamos el tipo de fuente que queromos colocar al texto*/
+	src: url(../fuente/BreeSerif-Regular.ttf);
+
+}
+
+.ContenedorPrincipal{
+	width: 80%;
+	height: 900px;
+	margin: auto;
+}
+.Logo{
+	width: 100%;
+	height: 400px;
+	background: url(../imagenesFood/fondo2.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+.Titulo{
+	width: 100%;
+	height: 200px;
+	background: rgba(0,0,0,.8);
+	padding-top: 70px;
+
+}
+
+.ImagenSemanal{
+	width: 100%;
+	height: 400px;
+	background: url(../imagenesFood/f2.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+
+}
+.PanelInferior{
+	width: 100%;
+	height: 600px;
+	background: rgba(0,0,0,.8);
+}
+
+
+.panel-bajoCentro{
+	width: 90%;/* ancho total del header*/
+	margin: auto;
+	height: 500px;
+	padding-top: 10%;/*lo baja 10 pixel*/
+	box-sizing: border-box;
+}
+.Panel{
+	width: 33%;
+	height: 550px;
+	float: left;
+	text-align: center;
+}
+.imagen1{
+	margin-right: : 20px;
+	height: 250px;
+	text-align: center;
+
+}
+
+.imagen2{
+	height: 250px;
+
+	text-align: center;
+
+}
+
+.imagen3{
+	height: 250px;
+	background-size: 100% 100%;
+	text-align: center;
+
+}
+
+img{
+	border-radius: 15px;
+}
+h2{
+	color: #fff;
+	font-size: 24;
+	text-decoration: none;/*le elimina la linea que biene por defecto*/
+	text-transform: uppercase;/*lo pone en mayuculas*/
+	padding-left: 15px;/*espacios entre las palabras*/
+	font-weight: bold;/*letras en negrilla*/
+	letter-spacing: 1px;
+	font-family: bree;
+	text-align: center;
+
+}
+h1{
+	color: #fff;
+	font-size: 24;
+	text-decoration: none;/*le elimina la linea que biene por defecto*/
+	text-transform: uppercase;/*lo pone en mayuculas*/
+	padding-left: 15px;/*espacios entre las palabras*/
+	font-weight: bold;/*letras en negrilla*/
+	letter-spacing: 1px;
+	font-family: bree;
+	text-align: center;
+
+}
+.Boton{
+	width: 100px;
+	background: red;
+	border-radius: 15px;
+	margin: auto;
+
+
+}
+
+.Panel a{
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;/*le elimina la linea que biene por defecto*/
+	text-transform: uppercase;/*lo pone en mayuculas*/
+	font-family: bree;
+	width: 700px;
+
+	
+
+
+}
+h4{
+	color: #fff;
+}
+
+

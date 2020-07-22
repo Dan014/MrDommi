@@ -1,0 +1,235 @@
+*{/* Ese coloca esta linea con el objetivo de eliminar las margenes que se crean automaticamente*/
+	margin: 0;
+	padding: 0;
+}
+.ImagenBig{
+	background: url(../imagenes/Resta.jpg);
+	height: 600px;
+	width: 100%;
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+header{
+	width: 100%;/* ancho total del header*/
+	background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+	height: 70px;
+	position: fixed;/*logra que el menu se quede fijo en la parte superior*/
+	z-index: 10;
+}
+
+.ancho{
+	width: 90%;/*ancho del header para el menu y el logo*/
+	height: 70px;/*alto del header */
+	margin: auto; /*me permite centrar el espacio creado*/
+}
+.logo{
+	width: 20%;
+	height: 70px;
+	background: rgba(255,20,44,.0);
+	float: left;/*permite enves de ubicarse debajo del bloque seguir en el mismo ero ubcado en la izquierda*/
+	padding-top: 10px;/*lo baja 10 pixel*/
+	box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+}
+.logo p a{
+	color: #fff;
+	font-size: 40px;/*Tamaño de la letra*/
+	text-decoration: none;
+	font-weight: bold;
+	font-family: bree;
+
+}
+
+
+header nav{
+	width: 80%;
+	height: 70px;
+	background: rgba(255,20,44,.0);
+
+	float: left;
+	text-align: center;
+	padding-top: 24px;
+	box-sizing: border-box;
+
+
+}
+header nav ul li{
+	display: inline;/*ubica el menu de forma horizontal */
+}
+header nav ul li a{
+	color: #fff;
+	font-size: 24;
+	text-decoration: none;/*le elimina la linea que biene por defecto*/
+	text-transform: uppercase;/*lo pone en mayuculas*/
+	padding-left: 15px;/*espacios entre las palabras*/
+	font-weight: bold;/*letras en negrilla*/
+	letter-spacing: 1px;
+	font-family: bree;
+}
+nav ul li a:hover{
+	color: black;/*en el momento que esten sobre el menu cambia de color*/
+}
+@font-face{
+	font-family: bree;/*colocamos el tipo de fuente que queromos colocar al texto*/
+	src: url(../fuente/BreeSerif-Regular.ttf);
+
+}
+.ancho-letras{
+	top: 150px;
+	position: absolute;
+	width: 50%;
+	height: 300px;
+	margin: 20px;
+	background: rgba(0,0,0,.8);
+	text-align: center;
+	z-index: 1;
+	float: left;
+	border-radius: 15px;
+
+
+}
+.ancho-letras h1{
+	margin-top: 100px;
+
+}
+
+.Boton{
+	background: rgba(0,0,0,.8);
+	position: absolute;
+	height: 70px;
+	width: 200px;
+	text-align: center;
+	margin-left:900px;
+	font-family: bree;
+	border-radius: 15px;
+
+
+}
+.Boton h3 a{
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-size: 24;
+	font-family: bree;
+
+
+}
+.Boton h3 {
+	margin-top: 20px;
+	font-family: bree;
+
+}
+.letras-slider{
+	width: 80%;
+	margin: auto;
+
+}
+.letras-slider h1{
+	color: #fff;
+	font-family: bree;
+	font-size: 40px;
+}
+.letras-slider p {
+	color: #fff;
+	font-family: bree;
+	font-size: 10px;
+	padding-top: 50px;
+
+
+}
+.PanelInferior{
+	width: 100%;
+	height: 700px;
+	background: url(../imagenesDomi/fondocon.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;/*permite que la imagen se ajuste a la pantalla*/
+	width: 100%;}
+
+
+	.panel-bajoCentro{
+		width: 90%;/* ancho total del header*/
+		margin: auto;
+		height: 500px;
+		padding-top: 10%;/*lo baja 10 pixel*/
+		box-sizing: border-box;
+	}
+	.Panel1{
+		width: 33%;
+		height: 550px;
+		float: left;
+		text-align: center;
+	}
+	.imagen1{
+		margin-right: : 20px;
+		height: 250px;
+		text-align: center;
+
+	}
+	.Panel2{
+		width: 33%;
+		height: 550px;
+		float: left;
+	}
+	.imagen2{
+		height: 250px;
+
+		text-align: center;
+
+	}
+	.Panel3{
+
+		width: 33%;
+		height: 550px;
+		float: left;
+		
+	}
+	.imagen3{
+		height: 250px;
+		background-size: 100% 100%;
+		text-align: center;
+
+	}
+
+	img{
+		border-radius: 15px;
+	}
+	h2{
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+		padding-left: 15px;/*espacios entre las palabras*/
+		font-weight: bold;/*letras en negrilla*/
+		letter-spacing: 1px;
+		font-family: bree;
+		text-align: center;
+
+	}
+
+	footer{
+		width: 100%;/* ancho total del header*/
+		background: rgba(0,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+		height: 70px;
+		text-align: center;
+		padding-top: 30px;
+
+	}
+
+	footer nav ul li{
+		display: inline;/*ubica el menu de forma horizontal */
+	}
+
+	footer nav ul li a{
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+		padding-left: 15px;/*espacios entre las palabras*/
+		font-weight: bold;/*letras en negrilla*/
+		letter-spacing: 1px;
+		font-family: bree;
+	}
+
+	

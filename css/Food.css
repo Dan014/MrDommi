@@ -1,0 +1,663 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+header{
+	width: 100%;/* ancho total del header*/
+	background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+	height: 70px;
+	z-index: 10;
+}
+.espacio{
+	width: 0%;/*ancho del header para el menu y el logo*/
+	height: 70px;/*alto del header */
+	background: rgb(252,112,0);
+
+
+}
+.ancho{
+	width: 90%;/*ancho del header para el menu y el logo*/
+	height: 70px;/*alto del header */
+	margin: auto; /*me permite centrar el espacio creado*/
+}
+.logo{
+	width: 20%;
+	height: 70px;
+	background: rgba(255,20,44,.0);
+	float: left;/*permite enves de ubicarse debajo del bloque seguir en el mismo ero ubcado en la izquierda*/
+	padding-top: 10px;/*lo baja 10 pixel*/
+	box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+}
+.logo p a{
+	color: #fff;
+	font-size: 40px;/*Tamaño de la letra*/
+	text-decoration: none;
+	font-weight: bold;
+	font-family: bree;
+
+}
+
+
+header nav{
+	width: 80%;
+	height: 70px;
+	background: rgba(255,20,44,.0);
+
+	float: left;
+	text-align: center;
+	padding-top: 24px;
+	box-sizing: border-box;
+
+
+}
+header nav ul li{
+	display: inline;/*ubica el menu de forma horizontal */
+}
+header nav ul li a{
+	color: #fff;
+	font-size: 24;
+	text-decoration: none;/*le elimina la linea que biene por defecto*/
+	text-transform: uppercase;/*lo pone en mayuculas*/
+	padding-left: 15px;/*espacios entre las palabras*/
+	font-weight: bold;/*letras en negrilla*/
+	letter-spacing: 1px;
+	font-family: bree;
+}
+nav ul li a:hover{
+	color: #444;/*en el momento que esten sobre el menu cambia de color*/
+}
+@font-face{
+	font-family: bree;/*colocamos el tipo de fuente que queromos colocar al texto*/
+	src: url(../fuente/BreeSerif-Regular.ttf);
+
+}
+html{
+	background: url(../imagenesDomi/fondocon.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;/*permite que la imagen se ajuste a la pantalla*/
+	width: 100%;}
+	main{
+		width: 100%;
+		display: flex;
+	}
+
+	.content-menu{
+		width: 20%;
+		margin-top: 30px;
+		background: #161616;
+		transition: all 300ms;
+	}
+	.Separador{
+		height: 70px;
+	}
+	.Panel{
+		width: 80%;
+	}
+	.DComida1{
+		height: 5%;
+	}
+	.Comida1{
+		height: 200px;
+		width: 90%;
+		background: gray;
+		margin: auto;
+		cursor: pointer;
+	}
+	.Comida1:hover{
+		background: rgba(0,0,0,0.4);
+		border-radius: 10px;
+	}
+	.FotoC1{
+		background: blue;
+		height: 100%;
+		width: 30%;
+	}
+	.DComida2{
+		height: 5%;
+
+	}
+	.Comida2{
+		height: 200px;
+		width: 90%;
+		background: rgba(0,0,0,0.4);
+		border-radius: 15px;
+		margin: auto;
+
+	}
+
+
+	.Comida2:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	.Fotocomida2{
+		height: 20px;
+		width: 20%;
+		box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+
+
+	}
+	.Foto2{
+		height: 160px;
+		width: 25%;
+		background-image: url(../imagenesHome/6.jpg);
+		background-size: 100% 100%;
+		margin-left: 20px;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Info2{
+		height: 160px;
+		width: 70%;
+		float: left;
+	}
+	.Superior2{
+		height: 50%;
+		width: 80%;
+		margin-top: 5%;
+		word-spacing: 1cm;
+		float: left;
+		padding: 10px;
+
+	}
+	.Superior2 h3{
+		word-spacing: 2.5cm;
+	}
+	.Bonton2{
+		background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+		height: 40%;
+		width: 20%;
+		margin-top: 5%;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Bonton2 h2 a{
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+
+
+	}
+	.Bonton2 h2 {
+		margin-top: 20px;
+		text-decoration: none;
+		text-align: center;
+
+	}
+
+	.Bonton2:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+
+	.DComida3{
+		height: 5%;
+	}
+	.Comida3{
+		height: 200px;
+		width: 90%;
+		background: rgba(0,0,0,0.4);
+		border-radius: 15px;
+		margin: auto;
+
+	}
+
+
+	.Comida3:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	.Fotocomida3{
+		height: 20px;
+		width: 20%;
+		box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+
+
+	}
+	.Foto3{
+		height: 160px;
+		width: 25%;
+		background-image: url(../imagenesHome/1.jpg);
+		background-size: 100% 100%;
+		margin-left: 20px;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Info3{
+		height: 160px;
+		width: 70%;
+		float: left;
+	}
+	.Superior3{
+		height: 50%;
+		width: 80%;
+		margin-top: 5%;
+		word-spacing: 1cm;
+		float: left;
+		padding: 10px;
+
+	}
+	.Superior3 h3{
+		word-spacing: 1.5cm;
+	}
+	.Bonton3{
+		background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+		height: 40%;
+		width: 20%;
+		margin-top: 5%;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Bonton3 h2 a{
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+
+
+	}
+	.Bonton3 h2 {
+		margin-top: 20px;
+		text-decoration: none;
+		text-align: center;
+
+	}
+
+	.Bonton3:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	///////////////////////
+
+	.DComida4{
+		margin-top: 40px;
+	}
+	.Comida4{
+		height: 200px;
+		width: 90%;
+		background: rgba(0,0,0,0.4);
+		border-radius: 15px;
+		margin: auto;
+		margin-top: 40px;
+
+
+	}
+
+
+	.Comida4:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	.Fotocomida4{
+		height: 20px;
+		width: 20%;
+		box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+
+
+	}
+	.Foto4{
+		height: 160px;
+		width: 25%;
+		background-image: url(../imagenesHome/2.jpg);
+		background-size: 100% 100%;
+		margin-left: 20px;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Info4{
+		height: 160px;
+		width: 70%;
+		float: left;
+	}
+	.Superior4{
+		height: 50%;
+		width: 80%;
+		margin-top: 5%;
+		word-spacing: 1cm;
+		float: left;
+		padding: 10px;
+
+	}
+	.Superior4 h3{
+		word-spacing: 1cm;
+	}
+	.Bonton4{
+		background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+		height: 40%;
+		width: 20%;
+		margin-top: 5%;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Bonton4 h2 a{
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+
+
+	}
+	.Bonton4 h2 {
+		margin-top: 20px;
+		text-decoration: none;
+		text-align: center;
+
+	}
+
+	.Bonton4:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	////////////////////////////////////
+	.DComida5{
+		margin-top: 40px;
+	}
+	.Comida5{
+		height: 200px;
+		width: 90%;
+		background: rgba(0,0,0,0.4);
+		border-radius: 15px;
+		margin: auto;
+		margin-top: 40px;
+
+
+	}
+
+
+	.Comida5:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	.Fotocomida5{
+		height: 20px;
+		width: 20%;
+		box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+	}
+	.Foto5{
+		height: 160px;
+		width: 25%;
+		background-image: url(../imagenesHome/3.jpg);
+		background-size: 100% 100%;
+		margin-left: 20px;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Info5{
+		height: 160px;
+		width: 70%;
+		float: left;
+	}
+	.Superior5{
+		height: 50%;
+		width: 80%;
+		margin-top: 5%;
+		word-spacing: 1cm;
+		float: left;
+		padding: 10px;
+
+	}
+	.Superior5 h3{
+		word-spacing: 2.5cm;
+	}
+	.Bonton5{
+		background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+		height: 40%;
+		width: 20%;
+		margin-top: 5%;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Bonton5 h2 a{
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+
+
+	}
+	.Bonton5 h2 {
+		margin-top: 20px;
+		text-decoration: none;
+		text-align: center;
+
+	}
+
+	.Bonton5:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	//////////////////////////////////
+
+	.DComida6{
+		margin-top: 40px;
+	}
+	.Comida6{
+		height: 200px;
+		width: 90%;
+		background: rgba(0,0,0,0.4);
+		border-radius: 15px;
+		margin: auto;
+		margin-top: 40px;
+	}
+
+
+	.Comida6:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	.Fotocomida6{
+		height: 20px;
+		width: 20%;
+		box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+	}
+	.Foto6{
+		height: 160px;
+		width: 25%;
+		background-image: url(../imagenesHome/4.jpg);
+		background-size: 100% 100%;
+		margin-left: 20px;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Info6{
+		height: 160px;
+		width: 70%;
+		float: left;
+	}
+	.Superior6{
+		height: 50%;
+		width: 80%;
+		margin-top: 5%;
+		word-spacing: 1cm;
+		float: left;
+		padding: 10px;
+
+	}
+	.Superior6 h3{
+		word-spacing: 2.5cm;
+	}
+	.Bonton6{
+		background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+		height: 40%;
+		width: 20%;
+		margin-top: 5%;
+		float: left;
+		border-radius: 15px;
+
+	}
+	.Bonton6 h2 a{
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+
+
+	}
+	.Bonton6 h2 {
+		margin-top: 20px;
+		text-decoration: none;
+		text-align: center;
+
+	}
+
+	.Bonton6:hover{
+		background: rgba(0,0,0,0.6);
+		border-radius: 10px;
+	}
+	.content-menu li{
+		list-style: none;
+		text-align: center;
+		padding: 20px;
+		color: white;
+		transition: all 300ms;
+		cursor: pointer;
+	}
+
+	.content-menu li:hover{
+		transform: translateY(10px);
+		background: red;
+	}
+
+
+
+	.content-menu li h4{
+		font-weight: 100;
+		transform: translateY(18px);
+		transition: all 300ms;
+
+	}
+
+	.content-menu:hover .text1{
+		transform: translateX(0px);
+		transition: all 100ms;
+	}
+
+	.content-menu:hover .text2{
+		transform: translateX(0px);
+		transition: all 200ms;
+	}
+
+
+	.content-menu:hover .text3{
+		transform: translateX(0px);
+		transition: all 300ms;
+	}
+
+
+	.content-menu:hover .text4{
+		transform: translateX(0px);
+		transition: all 400ms;
+	}
+
+
+	.content-menu:hover .text5{
+		transform: translateX(0px);
+		transition: all 500ms;
+	}
+
+
+	.content-menu:hover .text6{
+		transform: translateX(0px);
+		transition: all 600ms;
+	}
+
+
+	.content-menu:hover .text7{
+		transform: translateX(0px);
+		transition: all 700ms;
+	}
+
+
+	.content-menu:hover .text8{
+		transform: translateX(0px);
+		transition: all 800ms;
+	}
+
+
+	.content-menu:hover .text9{
+		transform: translateX(0px);
+		transition: all 900ms;
+	}
+
+
+
+
+
+	#slider{
+		width: 100%;
+		height: 200px;
+		background-image: url(../imagenes/banner.png);
+		background-size: 100% 100%;
+		animation: slider 10s infinite linear;
+
+
+
+	}
+
+	@keyframes slider {
+
+		to {
+			background-position: 2000px;
+		}
+	}
+	.separaFooter{
+		width: 100%;
+		height: 400px;
+	}	
+
+	footer{
+		width: 100%;/* ancho total del header*/
+		background: rgba(0,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+		height: 70px;
+		text-align: center;
+		padding-top: 30px;
+
+	}
+
+	footer nav ul li{
+		display: inline;/*ubica el menu de forma horizontal */
+	}
+
+	footer nav ul li a{
+		color: #fff;
+		font-size: 24;
+		text-decoration: none;/*le elimina la linea que biene por defecto*/
+		text-transform: uppercase;/*lo pone en mayuculas*/
+		padding-left: 15px;/*espacios entre las palabras*/
+		font-weight: bold;/*letras en negrilla*/
+		letter-spacing: 1px;
+		font-family: bree;
+	}
+
+
+
+
+
+
+
+
+

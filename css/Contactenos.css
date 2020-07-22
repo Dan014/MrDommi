@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: url(../imagenesDomi/fondocon.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;/*permite que la imagen se ajuste a la pantalla*/
+    width: 100%;
+
+}
+
+header{
+    width: 100%;/* ancho total del header*/
+    background: rgba(255,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+    height: 70px;
+    z-index: 10;
+}
+.espacio{
+    width: 0%;/*ancho del header para el menu y el logo*/
+    height: 70px;/*alto del header */
+    background: rgb(252,112,0);
+
+
+}
+.ancho{
+    width: 90%;/*ancho del header para el menu y el logo*/
+    height: 70px;/*alto del header */
+    margin: auto; /*me permite centrar el espacio creado*/
+}
+.logo{
+    width: 20%;
+    height: 70px;
+    background: rgba(255,20,44,.0);
+    float: left;/*permite enves de ubicarse debajo del bloque seguir en el mismo ero ubcado en la izquierda*/
+    padding-top: 10px;/*lo baja 10 pixel*/
+    box-sizing: border-box;/*se bja los 10 pero teniendo encuenta el ancho del contenedor de 70 px*/
+}
+.logo p a{
+    color: #fff;
+    font-size: 40px;/*Tamaño de la letra*/
+    text-decoration: none;
+    font-weight: bold;
+    font-family: bree;
+
+}
+
+
+header nav{
+    width: 80%;
+    height: 70px;
+    background: rgba(255,20,44,.0);
+
+    float: left;
+    text-align: center;
+    padding-top: 24px;
+    box-sizing: border-box;
+
+
+}
+header nav ul li{
+    display: inline;/*ubica el menu de forma horizontal */
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 24;
+    text-decoration: none;/*le elimina la linea que biene por defecto*/
+    text-transform: uppercase;/*lo pone en mayuculas*/
+    padding-left: 15px;/*espacios entre las palabras*/
+    font-weight: bold;/*letras en negrilla*/
+    letter-spacing: 1px;
+    font-family: bree;
+}
+nav ul li a:hover{
+    color: black;/*en el momento que esten sobre el menu cambia de color*/
+}
+@font-face{
+    font-family: bree;/*colocamos el tipo de fuente que queromos colocar al texto*/
+    src: url(../fuente/BreeSerif-Regular.ttf);
+
+}
+.Division{
+    width: 300px;
+    height: 20px;
+
+}
+
+.ContenedorPrincipal{
+    width: 100%;
+    height: 600px;
+    float: left;
+}
+.DivDomi{
+    width: 2%;
+    height: 600px;
+    float: left;
+}
+
+
+.Mitad{
+    width: 5%;
+    height: 600px;
+    float: left;
+    border-radius: 9px;
+
+}
+.Informacion{
+    width: 45%;
+    height: 500px;
+    float: left;
+    background-color: rgba(0,0,0,0.51);
+    border-radius: 9px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+
+}
+.TablaDomicilio{
+    width: 100%;
+    height: 75%;
+    padding: 60px 0px;
+
+}
+.Mapa{
+    width: 95%;
+    float: left;
+    margin-left: 30px;
+
+}
+iframe{
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 9px;
+
+}
+
+.Imagenes{
+    width: 45%;
+    height: 500px;
+    float: left;
+    background-color: rgba(0,0,0,0.51);
+    padding: 30px 20px;
+    border-radius: 9px;
+    box-sizing: border-box;
+
+
+}
+
+.input2{
+   color:#3c3c3c;
+   font-family:principal;
+   font-size:18px;
+   line-height:22px;
+   background-color:#fbfbfb;
+   padding: 13px 13px 13px 54px;
+   margin-bottom:10px;
+   width:45%;
+   box-sizing:border-box;
+   float: left;
+   border-radius: 9px;
+
+
+
+}
+
+.input{
+   color:#3c3c3c;
+   font-family:principal;
+   font-size:18px;
+   line-height:22px;
+   background-color:#fbfbfb;
+   padding: 13px 13px 13px 54px;
+   width:45%;
+   float: right;
+   box-sizing:border-box;
+   border-radius: 9px;
+
+
+}
+
+textarea{
+    margin-top: 10px;
+    width:100%;
+    height:200px;
+    line-height:150%;
+    resize:vertical;
+    border-radius: 9px;
+
+
+}
+
+p{
+    color: #fff;
+    font-size: 24;
+    text-decoration: none;/*le elimina la linea que biene por defecto*/
+    text-transform: uppercase;/*lo pone en mayuculas*/
+    padding-left: 15px;/*espacios entre las palabras*/
+    font-weight: bold;/*letras en negrilla*/
+    letter-spacing: 1px;
+    font-family: bree;
+    line-height:200%
+}
+
+
+h1{
+    color: #fff;
+    font-size: 24;
+    text-decoration: none;/*le elimina la linea que biene por defecto*/
+    text-transform: uppercase;/*lo pone en mayuculas*/
+    padding-left: 15px;/*espacios entre las palabras*/
+    font-weight: bold;/*letras en negrilla*/
+    letter-spacing: 1px;
+    font-family: bree;
+    line-height:200%  
+}
+
+footer{
+        width: 100%;/* ancho total del header*/
+        background: rgba(0,20,44,.8);/* coloca un color y le da un nivel de transparencia*/
+        height: 70px;
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 1200px;
+
+    }
+
+    footer nav ul li{
+        display: inline;/*ubica el menu de forma horizontal */
+    }
+
+    footer nav ul li a{
+        color: #fff;
+        font-size: 24;
+        text-decoration: none;/*le elimina la linea que biene por defecto*/
+        text-transform: uppercase;/*lo pone en mayuculas*/
+        padding-left: 15px;/*espacios entre las palabras*/
+        font-weight: bold;/*letras en negrilla*/
+        letter-spacing: 1px;
+        font-family: bree;
+    }
+
+
+

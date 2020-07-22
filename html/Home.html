@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<title>Mi Primer Sitio Web</title>
+	<link rel="stylesheet" type="text/css" href="../css/Home.css">
+	<link rel="stylesheet" type="text/css" href="../css/Home2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/alto.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<div class="ancho">
+			<div class="logo">
+				<p><a href="Home.html">Mr Domi</a></p>
+				
+			</div>
+			<nav>
+				<ul>
+					<li><a href="Home.html">Inicio</a></li>
+					<li><a href="Domicilios.html">Domicilios</a></li>
+					<li><a href="Food.html">Promociones</a></li>
+					<li><a href="Restaurante.html">Restaurantes</a></li>
+					<li><a href="Nosotros.html">Nosotros</a></li></li>
+					<li><a href="Contactenos.html">Contactenos</a></li></li>
+					<li><a target="_blank" href="Login.html">Iniciar Sesion</a></li></li>
+				</ul>
+
+			</nav>
+		</div>
+	</header>
+
+
+	<div class="ancho-letras">
+		<div class="letras-slider">
+			<h1 class="animated zoomIn">Mas Rapido y Sencillo ¡Imposible!</h1>
+		</div>
+		<div class="espacioBoton"></div>
+		<div class="boton1">
+			<a href="Domicilios.html"><h2>HAZ TU DOMICILIO YA</h2></a></div>		
+		</div>
+		<div id = "particles-js"></div>
+
+		<div class="espacion"></div>
+		<div class="Panel-fotos">
+
+			<div class="prinSlider">
+				<div class="slider1"><div class="slideshow-container">
+
+					<div class="mySlides fade">
+						<img src="../imagenesFood/1.png" width="315" height="180">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="../imagenesFood/2.png" width="315" height="180">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="../imagenesFood/3.png" width="315" height="180">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="../imagenesFood/4.png" width="315" height="180">
+					</div>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+
+
+				</div>
+
+			</div>
+			<div class="slider2"><div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<img src="../imagenesDomi/1.jpg" width="315" height="180">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="../imagenesDomi/2.jpg" width="315" height="180">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="../imagenesDomi/3.jpg" width="315" height="180">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="../imagenesFood/4.png" width="315" height="180">
+				</div>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+
+
+			</div>
+
+		</div>
+		<div class="slider3"><div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<img src="../imagenesFood/5.png" width="315" height="180">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="../imagenesFood/6.png" width="315" height="180">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="../imagenesFood/7.png" width="315" height="180">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="../imagenesFood/8.png" width="315" height="180">
+			</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+
+
+		</div>
+
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // cambiar image every 2 seconds
+}
+</script>	</div>
+</div>
+
+</div>
+<div class="panel-bajo1">
+	<div class="panel-bajoCentro">
+		<div class="Panel1">
+			<div class="imagen1"><img src="../imagenesDomi/tacos.jpg" width="315" height="180"></div>
+			<h1>Encuentra la comida que más te gusta</h1>		
+		</div>
+		<div class="Panel2">
+			<div class="imagen2"><img src="../imagenesDomi/tiempo.jpg" width="315" height="180"></div>
+			<h1>Ahorra tiempo</h1>
+		</div>
+		<div class="Panel3">		
+			<div class="imagen2"><img src="../imagenesDomi/promo.jpg" width="250" height="180"></div>
+			<h1>Promociones todos los dias</h1>
+		</div>
+	</div>
+</div>
+</body>
+<footer>
+	<nav>
+		<ul>
+			<li><a href="">Politcas</a></li>
+			<li><a href="">Privacidad</a></li>
+			<li><a href="">Acerca de</a></li>
+			<li><a href="MyInfo.html">Mas Info</a></li>
+			<li><a href="">Prefuntas Frecuentes</a></li>
+			<li><a href="">Contactenos</a></li>
+			<li><a href="">Restaurantes</a></li>
+			<li><a href="">Acerca De</a></li>
+		</ul>
+	</nav>
+</footer>
+</html>
